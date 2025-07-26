@@ -230,7 +230,7 @@
                     <div><span id="minutes">00</span><p>Minutes</p></div>
                     <div><span id="seconds">00</span><p>Seconds</p></div>
                 </div>
-                <p class="text-gray-400 mt-4 text-sm">31st August 2025</p>
+                <p class="text-gray-400 mt-4 text-sm">30th August 2025</p>
             </div>
         </div>
     </header>
@@ -300,7 +300,7 @@
                         <h4 class="text-2xl font-bold mb-4" style="color: var(--lime)">Bracket A</h4>
                         <p class="text-gray-400 mb-6 flex-grow">The top contenders fight to secure their spot in the finals.</p>
                         <div class="space-y-4">
-                            <div class="flex items-center"><span class="font-bold text-lg mr-4" style="color: var(--lime)">1st</span> <span class="text-green-400">→ Advances to Finals</span></div>
+                            <div class="flex items-center"><span class="font-bold text-lg mr-4" style="color: var(--lime)">1st</span> <span class="text-green-400">→ Advances to next round</span></div>
                             <div class="flex items-center"><span class="font-bold text-lg mr-4 text-gray-300">2nd</span> <span class="text-red-400">→ Eliminated</span></div>
                             <div class="flex items-center"><span class="font-bold text-lg mr-4 text-gray-300">3rd</span> <span class="text-red-400">→ Eliminated</span></div>
                         </div>
@@ -310,7 +310,7 @@
                         <h4 class="text-2xl font-bold mb-4" style="color: var(--cyan)">Bracket B</h4>
                         <p class="text-gray-400 mb-6 flex-grow">A chance for redemption or elimination. Only one can advance.</p>
                         <div class="space-y-4">
-                            <div class="flex items-center"><span class="font-bold text-lg mr-4" style="color: var(--lime)">1st</span> <span class="text-green-400">→ Advances to Finals</span></div>
+                            <div class="flex items-center"><span class="font-bold text-lg mr-4" style="color: var(--lime)">1st</span> <span class="text-green-400">→ Advances to next round</span></div>
                             <div class="flex items-center"><span class="font-bold text-lg mr-4 text-gray-300">2nd</span> <span style="color: var(--orange)">→ Demoted to Bracket C</span></div>
                             <div class="flex items-center"><span class="font-bold text-lg mr-4 text-gray-300">3rd</span> <span class="text-red-400">→ Eliminated</span></div>
                         </div>
@@ -320,7 +320,7 @@
                         <h4 class="text-2xl font-bold mb-4" style="color: var(--orange)">Bracket C</h4>
                         <p class="text-gray-400 mb-6 flex-grow">The final opportunity to fight for a place in the Grand Finals.</p>
                         <div class="space-y-4">
-                            <div class="flex items-center"><span class="font-bold text-lg mr-4" style="color: var(--lime)">1st</span> <span class="text-green-400">→ Advances to Finals</span></div>
+                            <div class="flex items-center"><span class="font-bold text-lg mr-4" style="color: var(--lime)">1st</span> <span class="text-green-400">→ Advances to next round</span></div>
                             <div class="flex items-center"><span class="font-bold text-lg mr-4 text-gray-300">2nd</span> <span class="text-red-400">→ Eliminated</span></div>
                             <div class="flex items-center"><span class="font-bold text-lg mr-4 text-gray-300">3rd</span> <span class="text-red-400">→ Eliminated</span></div>
                         </div>
@@ -388,8 +388,8 @@
             const countdownElement = document.getElementById('countdown');
             if (!countdownElement) return;
 
-            // Set the target date for the countdown
-            const countdownDate = new Date("August 31, 2025 00:00:00").getTime();
+            // Set the target date for the countdown to August 30, 2025
+            const countdownDate = new Date("August 30, 2025 00:00:00").getTime();
 
             // Update the countdown every 1 second
             const interval = setInterval(() => {
