@@ -195,6 +195,26 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(255, 0, 0, 0.6);
         }
+
+        .p5-button-secondary {
+            background-color: #4a4a4a; /* A darker grey for secondary action */
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            margin-top: 1rem; /* Space from primary button */
+        }
+
+        .p5-button-secondary:hover {
+            background-color: #6a6a6a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -232,6 +252,13 @@
                 </div>
                 <p class="text-gray-400 mt-4 text-sm">30th August 2025</p>
             </div>
+
+            <!-- Discord Button - Moved here -->
+            <div class="mt-8 reveal">
+                <a href="https://discord.com/invite/QXSWZSv9z8" target="_blank" class="p5-button-secondary">
+                    Join Our Discord Server!
+                </a>
+            </div>
         </div>
     </header>
 
@@ -248,6 +275,10 @@
             <div class="mt-8 reveal">
                 <a href="https://forms.gle/nTorNL4kn1UjbKvQ7" target="_blank" class="p5-button">
                     Register Now!
+                </a>
+                <!-- New button for Infographic -->
+                <a href="tes-infographic.html" class="p5-button-secondary ml-4">
+                    View Tournament Flow
                 </a>
             </div>
         </section>
