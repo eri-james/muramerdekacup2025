@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.U.R.A. Freedom Cup 2025 Documentation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c; /* Dark background */
+            color: #e2e8f0; /* Light gray text */
+        }
+        /* Custom styles for accordion */
+        .accordion-header {
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border-bottom: 2px solid #4a5568; /* Darker border for separation */
+        }
+        .accordion-header:hover {
+            background-color: #c53030; /* Persona 5 red on hover */
+            color: #f7fafc; /* White text on hover */
+        }
+        .accordion-header.active {
+            background-color: #c53030; /* Active header is red */
+            color: #f7fafc; /* White text for active header */
+            border-bottom: 2px solid #ecc94b; /* Yellow accent for active header */
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+            padding-top: 0;
+            padding-bottom: 0;
+            background-color: #2d3748; /* Slightly lighter dark for content */
+        }
+        .accordion-content.active {
+            max-height: 1500px; /* Increased for more content */
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        .arrow-icon {
+            transition: transform 0.3s ease, color 0.3s ease;
+            color: #cbd5e0; /* Light gray arrow */
+        }
+        .accordion-header.active .arrow-icon {
+            transform: rotate(180deg);
+            color: #ecc94b; /* Yellow arrow for active header */
+        }
+        /* Specific Persona 5 list styling */
+        .list-disc li {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .list-disc li::before {
+            content: '♦'; /* Diamond bullet */
+            color: #ecc94b; /* Yellow diamond */
+            position: absolute;
+            left: 0;
+            font-size: 0.8em;
+            top: 0.2em;
+        }
+        .list-circle li {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .list-circle li::before {
+            content: '•'; /* Circle bullet */
+            color: #f56565; /* Light red circle */
+            position: absolute;
+            left: 0;
+            font-size: 0.8em;
+            top: 0.2em;
+        }
+
+        /* Table styling for Persona 5 aesthetic */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border: 2px solid #4a5568; /* Dark border */
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border: 1px solid #4a5568; /* Inner borders */
+            color: #e2e8f0; /* Light text */
+        }
+        th {
+            background-color: #c53030; /* Red header background */
+            color: #f7fafc; /* White header text */
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+        tr:nth-child(even) {
+            background-color: #2d3748; /* Slightly darker row for zebra striping */
+        }
+        tr:nth-child(odd) {
+            background-color: #374151; /* Default row background */
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-6 md:p-8 lg:p-10">
+
+    <div class="max-w-4xl mx-auto bg-gray-800 shadow-2xl rounded-lg overflow-hidden border-4 border-gray-700">
+        <!-- Header Section -->
+        <header class="bg-red-700 text-white p-6 sm:p-8 rounded-t-lg border-b-4 border-yellow-400">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-center mb-2 text-yellow-300 uppercase tracking-wide">M.U.R.A. Freedom Cup 2025</h1>
+            <p class="text-lg sm:text-xl text-center opacity-90 font-bold text-gray-200">Event Planning Documentation</p>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="p-4 sm:p-6 md:p-8">
+
+            <p class="text-base sm:text-lg mb-6 leading-relaxed text-gray-200">
+                This document outlines the planning and execution strategy for the Malayan Umamusume Racing Association (M.U.R.A.) Freedom Cup 2025, a triple elimination in-game tournament for Malaysian and Singaporean players. The event is designed to be managed by a small team of 2-3 organizers.
+            </p>
+
+            <!-- Accordion Section: Event Overview -->
+            <div class="mb-6 border border-gray-700 rounded-lg overflow-hidden">
+                <div class="accordion-header flex items-center justify-between p-4 bg-gray-900 font-extrabold text-lg sm:text-xl text-yellow-300 rounded-t-lg">
+                    <span>1. Event Overview</span>
+                    <svg class="arrow-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div class="accordion-content p-4">
+                    <ul class="list-disc pl-5 space-y-2 text-base text-gray-200">
+                        <li><b>Event Name:</b> M.U.R.A. Freedom Cup 2025</li>
+                        <li><b>Club:</b> Malayan Umamusume Racing Association (M.U.R.A.)</li>
+                        <li><b>Target Audience:</b> Malaysian and Singaporean Umamusume Pretty Derby players (in-game club members).</li>
+                        <li><b>Climax/Main Event Date:</b> August 30, 2025</li>
+                        <li><b>Organizer Team Size:</b> 2-3 people</li>
+                        <li><b>Tournament Format:</b> Triple Elimination (3v3v3 or 3v3v3v3 per race match)</li>
+                    </ul>
+
+                    <h3 class="text-xl font-extrabold mt-6 mb-3 text-yellow-300">1.1 Triple Elimination Format Details</h3>
+                    <p class="mb-4 text-gray-200">
+                        The Freedom Cup utilizes a unique triple elimination structure across three brackets: A, B, and C. Refer to the table below for a detailed breakdown.
+                    </p>
+
+                    <!-- Infographic Table: Triple Elimination Format -->
+                    <div class="overflow-x-auto">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Phase</th>
+                                    <th>Current Bracket</th>
+                                    <th>1st Place Action</th>
+                                    <th>2nd Place Action</th>
+                                    <th>3rd+ Place Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>Phase One</b></td>
+                                    <td>Bracket Determiner</td>
+                                    <td>Advances to <b>Bracket A</b></td>
+                                    <td>Advances to <b>Bracket B</b></td>
+                                    <td>Advances to <b>Bracket C</b></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3"><b>Phase Two</b></td>
+                                    <td>From <b>Bracket A</b></td>
+                                    <td>Remains in <b>Bracket A</b></td>
+                                    <td>Moves to <b>Bracket B</b></td>
+                                    <td>Moves to <b>Bracket C</b></td>
+                                </tr>
+                                <tr>
+                                    <td>From <b>Bracket B</b></td>
+                                    <td>Remains in <b>Bracket B</b></td>
+                                    <td>Moves to <b>Bracket C</b></td>
+                                    <td>Moves to <b>Bracket C</b></td>
+                                </tr>
+                                <tr>
+                                    <td>From <b>Bracket C</b></td>
+                                    <td>Remains in <b>Bracket C</b></td>
+                                    <td>Eliminated</td>
+                                    <td>Eliminated</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="text-sm italic text-gray-400 mt-2">This process continues until a single champion emerges from each of the three brackets.</p>
+                </div>
+            </div>
+
+            <!-- Accordion Section: Event Timeline & Phases -->
+            <div class="mb-6 border border-gray-700 rounded-lg overflow-hidden">
+                <div class="accordion-header flex items-center justify-between p-4 bg-gray-900 font-extrabold text-lg sm:text-xl text-yellow-300">
+                    <span>2. Event Timeline & Phases</span>
+                    <svg class="arrow-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div class="accordion-content p-4">
+                    <p class="mb-4 text-base text-gray-200">
+                        The event is divided into three main phases, leading up to the Freedom Cup climax.
+                    </p>
+
+                    <!-- Infographic Table: Event Timeline Summary -->
+                    <div class="overflow-x-auto mb-6">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Phase</th>
+                                    <th>Dates</th>
+                                    <th>Objective</th>
+                                    <th>Key Activities</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>Phase 1:</b> Pre-Event Hype & Registration</td>
+                                    <td>July 30 - August 15, 2025</td>
+                                    <td>Build excitement, attract participants, and establish foundational rules.</td>
+                                    <td>Official Announcement, Rules & Format Deep Dive, Registration Period.</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Phase 2:</b> Warm-up & Seeding Races</td>
+                                    <td>August 16 - August 25, 2025</td>
+                                    <td>Engage participants, provide practice opportunities, and facilitate initial player grouping.</td>
+                                    <td>Optional "Freedom Sprint" Practice Races, Seeding Challenge.</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Phase 3:</b> Freedom Cup 2025 - The Climax</td>
+                                    <td>August 26 - August 30, 2025</td>
+                                    <td>Execute the main tournament matches and crown the champions.</td>
+                                    <td>Bracket Creation & Announcement, Execution of Matches, Finals & Winner Announcement.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Detailed Phase 1 -->
+                    <div class="bg-gray-700 p-4 rounded-lg border-l-4 border-red-500 mb-6 shadow-md">
+                        <h3 class="text-xl font-extrabold text-yellow-300 mb-3">2.1 Phase 1: Pre-Event Hype & Registration <span class="text-base font-bold text-gray-300">(July 30 - August 15, 2025)</span></h3>
+                        <p class="mb-3 italic text-gray-200"><b>Objective:</b> Build excitement, attract participants, and establish foundational rules.</p>
+
+                        <div class="mb-4">
+                            <h4 class="font-bold text-lg text-red-400">Activity: Official Announcement</h4>
+                            <p class="text-sm text-gray-400"><b>Dates:</b> July 30 - August 2</p>
+                            <p class="text-base text-gray-100">Create and disseminate a visually appealing announcement graphic/message across all M.U.R.A. communication channels (Discord, WhatsApp, social media). Include event name, climax date, and format.</p>
+                            <p class="text-sm font-bold mt-1 text-yellow-300"><b>Key Task:</b> Draft announcement, review for clarity.</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h4 class="font-bold text-lg text-red-400">Activity: Rules & Format Deep Dive</h4>
+                            <p class="text-sm text-gray-400"><b>Dates:</b> August 3 - August 7</p>
+                            <p class="text-base text-gray-100">Develop a detailed document explaining the triple elimination format (Phase One & Two), game-specific rules (e.g., allowed Umamusume, support cards, race conditions), and any other relevant guidelines. Host a text-based Q&A session.</p>
+                            <p class="text-sm font-bold mt-1 text-yellow-300"><b>Key Task:</b> Draft rules document, moderate Q&A.</p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold text-lg text-red-400">Activity: Registration Period</h4>
+                            <p class="text-sm text-gray-400"><b>Dates:</b> August 8 - August 15</p>
+                            <p class="text-base text-gray-100">Set up a simple online registration form (e.g., Google Forms) to collect participant in-game IDs, contact information, and region. Implement clear deadlines and send reminders.</p>
+                            <p class="text-sm font-bold mt-1 text-yellow-300"><b>Key Task:</b> Set up and monitor registration form.</p>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Phase 2 -->
+                    <div class="bg-gray-700 p-4 rounded-lg border-l-4 border-red-500 mb-6 shadow-md">
+                        <h3 class="text-xl font-extrabold text-yellow-300 mb-3">2.2 Phase 2: Warm-up & Seeding Races <span class="text-base font-bold text-gray-300">(August 16 - August 25, 2025)</span></h3>
+                        <p class="mb-3 italic text-gray-200"><b>Objective:</b> Engage participants, provide practice opportunities, and facilitate initial player grouping.</p>
+
+                        <div class="mb-4">
+                            <h4 class="font-bold text-lg text-red-400">Activity: Optional "Freedom Sprint" Practice Races</h4>
+                            <p class="text-sm text-gray-400"><b>Dates:</b> August 16 - August 20</p>
+                            <p class="text-base text-gray-100">Encourage players to self-organize 3v3 practice matches and share results/screenshots in a dedicated club channel. Offer informal recognition (e.g., "bragging rights").</p>
+                            <p class="text-sm font-bold mt-1 text-yellow-300"><b>Key Task:</b> Create dedicated channel, encourage participation.</p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold text-lg text-red-400">Activity: Seeding Challenge</h4>
+                            <p class="text-sm text-gray-400"><b>Dates:</b> August 21 - August 25</p>
+                            <p class="text-base text-gray-100">Implement a simple challenge (e.g., single best run submission on a specific race condition) to help group players fairly for the initial triple elimination bracket.</p>
+                            <p class="text-sm font-bold mt-1 text-yellow-300"><b>Key Task:</b> Set challenge parameters, collect and verify submissions.</p>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Phase 3 -->
+                    <div class="bg-gray-700 p-4 rounded-lg border-l-4 border-red-500 shadow-md">
+                        <h3 class="text-xl font-extrabold text-yellow-300 mb-3">2.3 Phase 3: Freedom Cup 2025 - The Climax <span class="text-base font-bold text-gray-300">(August 26 - August 30, 2025)</span></h3>
+                        <p class="mb-3 italic text-gray-200"><b>Objective:</b> Execute the main tournament matches and crown the champions.</p>
+
+                        <div class="mb-4">
+                            <h4 class="font-bold text-lg text-red-400">Activity: Bracket Creation & Announcement</h4>
+                            <p class="text-sm text-gray-400"><b>Date:</b> August 26</p>
+                            <p class="text-base text-gray-100">Based on registrations and seeding (if applicable), create the initial triple elimination brackets using an online bracket generator (e.g., Challonge.com). Publicly announce the brackets.</p>
+                            <p class="text-sm font-bold mt-1 text-yellow-300"><b>Key Task:</b> Handle bracket setup and initial announcement.</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h4 class="font-bold text-lg text-red-400">Activity: Execution of Matches</h4>
+                            <p class="text-sm text-gray-400"><b>Dates:</b> August 27 - August 29</p>
+                            <p class="text-base text-gray-100">Players will self-organize and conduct their 3v3 matches. Results, accompanied by screenshots, must be reported in designated "match reporting" channels for each bracket (A, B, C) by strict deadlines.</p>
+                            <p class="text-sm font-bold mt-1 text-yellow-300"><b>Key Task:</b> Monitor reporting channels, update brackets, manage disputes.</p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold text-lg text-red-400">Activity: Freedom Cup 2025 Finals & Winner Announcement</h4>
+                            <p class="text-sm text-gray-400"><b>Date:</b> August 30</p>
+                            <p class="text-base text-gray-100">Conduct the final matches. If feasible, consider live-streaming the semi-finals and finals. Promptly verify all final results. Announce the Freedom Cup 2025 Champion and bracket winners.</p>
+                            <p class="text-sm font-bold mt-1 text-yellow-300"><b>Key Task:</b> Oversee final matches, manage streaming (if applicable), verify results, announce winners.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Section: Organizer Roles & Responsibilities -->
+            <div class="mb-6 border border-gray-700 rounded-lg overflow-hidden">
+                <div class="accordion-header flex items-center justify-between p-4 bg-gray-900 font-extrabold text-lg sm:text-xl text-yellow-300">
+                    <span>3. Organizer Roles & Responsibilities</span>
+                    <svg class="arrow-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div class="accordion-content p-4">
+                    <p class="mb-4 text-base text-gray-200">
+                        For a team of 2-3 organizers, clear role delegation is crucial for efficient event management.
+                    </p>
+
+                    <!-- Table: Organizer Roles -->
+                    <div class="overflow-x-auto">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Role</th>
+                                    <th>Primary Responsibilities</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>Organizer 1:</b> The Strategist & Main Communicator</td>
+                                    <td>Overall event planning, timeline management, strategic oversight, primary participant contact, drafting announcements, overseeing bracket progression.</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Organizer 2:</b> The Logistics & Tech Lead</td>
+                                    <td>Setting up registration forms, managing online bracket system, technical support (streaming/Discord), collecting and verifying match results.</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Organizer 3:</b> The Community & Hype Manager <span class="text-sm font-bold text-gray-300">(If Available)</span></td>
+                                    <td>Creating engaging content, encouraging participation, moderating community channels, assisting with live stream commentary/tech support.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="text-sm italic mt-2 text-gray-400">
+                        *Note: If only two organizers are available, these responsibilities will be distributed between Organizer 1 and Organizer 2.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Accordion Section: Key Considerations for a Small Team -->
+            <div class="border border-gray-700 rounded-lg overflow-hidden">
+                <div class="accordion-header flex items-center justify-between p-4 bg-gray-900 font-extrabold text-lg sm:text-xl text-yellow-300">
+                    <span>4. Key Considerations for a Small Team</span>
+                    <svg class="arrow-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div class="accordion-content p-4">
+                    <ul class="list-disc pl-5 space-y-2 text-base text-gray-200">
+                        <li><b>Automation:</b> Leverage online tools (forms, bracket generators) to minimize manual workload.</li>
+                        <li><b>Clear Communication:</b> Provide unambiguous rules, deadlines, and expectations to participants to reduce confusion and disputes.</li>
+                        <li><b>Community Engagement:</b> Empower and encourage participants to self-organize matches and report results, fostering a sense of shared responsibility.</li>
+                        <li><b>Realism:</b> Prioritize the smooth execution of the core tournament format over implementing overly complex features.</li>
+                        <li><b>Contingency Planning:</b> Develop simple plans for common issues such as player dropouts or match disputes.</li>
+                        <li><b>Post-Event Feedback:</b> Collect feedback from participants after the event to identify areas for improvement in future tournaments.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="mt-8 text-center text-sm text-gray-400">
+                This documentation serves as a comprehensive guide for the M.U.R.A. Freedom Cup 2025, enabling a small team of organizers to deliver a successful and engaging event.
+            </p>
+
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const isActive = this.classList.contains('active');
+
+                    // Close all other open accordions
+                    accordionHeaders.forEach(otherHeader => {
+                        if (otherHeader !== this && otherHeader.classList.contains('active')) {
+                            otherHeader.classList.remove('active');
+                            otherHeader.nextElementSibling.classList.remove('active');
+                        }
+                    });
+
+                    // Toggle current accordion
+                    this.classList.toggle('active');
+                    content.classList.toggle('active');
+                });
+            });
+
+            // Open the first accordion by default on load
+            if (accordionHeaders.length > 0) {
+                accordionHeaders[0].click();
+            }
+        });
+    </script>
+</body>
+</html>
